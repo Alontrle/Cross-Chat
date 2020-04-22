@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '5.1.0'
+}
+
+group 'com.tobiassteely'
+version '1.0-SNAPSHOT'
+mainClassName = "com.tobiassteely.crosschat.CrossChat"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/'
+    }
+    maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url = 'https://oss.sonatype.org/content/repositories/central' }
+}
+
+dependencies {
+    compile files('libs/paper.jar')
+    compile 'org.mongodb:mongodb-driver-sync:4.0.2'
+    compile 'net.md-5:bungeecord-api:1.15-SNAPSHOT'
+    compile group: 'org.mongodb', name: 'bson', version: '3.0.4'
+    compileOnly 'me.clip:placeholderapi:2.10.4'
+}

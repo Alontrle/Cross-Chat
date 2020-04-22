@@ -1,0 +1,11 @@
+name: CrossChat
+version: 1.0.0
+main: com.tobiassteely.crosschat.CrossChatSpigot
+description: A lightweight powerful cross chat system.
+author: Alontrle
+commands:
+  crosschat:
+    usage: /<command>
+    description: "The admin command for Cross Chat."
+    permission: crosschat.help
+    aliases: [cc, cchat]

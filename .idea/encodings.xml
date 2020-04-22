@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/CommandDiscord.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/CommandManager.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/CommandObject.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/CommandResponse.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/CommandWorker.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/MessageEventHandler.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/MessageEventManger.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/cmd/End.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/cmd/Help.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/cmd/Module.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/cmd/Settings.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tobiassteely/crosschat/commandsystem/cmd/Staff.java" charset="windows-1252" />
+  </component>
+</project>

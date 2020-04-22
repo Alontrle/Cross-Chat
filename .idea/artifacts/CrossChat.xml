@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CrossChat">
+    <output-path>$PROJECT_DIR$/out/artifacts/CrossChat</output-path>
+    <root id="archive" name="CrossChat.jar">
+      <element id="module-output" name="CrossChat.main" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/bungee.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/libs/mongodb-driver-3.9.1.jar" />
+    </root>
+  </artifact>
+</component>

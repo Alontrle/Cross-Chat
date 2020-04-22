@@ -1,0 +1,5 @@
+name: CrossChat
+version: 1.0.0
+main: com.tobiassteely.crosschat.CrossChatBungee
+description: A lightweight powerful cross chat system.
+author: Alontrle
