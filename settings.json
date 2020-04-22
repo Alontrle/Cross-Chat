@@ -1,7 +1,0 @@
-{
- "mongodb-authdb": "admin",
- "mongodb-db": "crosschat",
- "mongodb-host": "144.217.98.22",
- "mongodb-password": "xxx",
- "mongodb-username": "testUser"
-}
