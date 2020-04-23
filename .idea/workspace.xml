@@ -136,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CrossChat">
+  <component name="RunManager" selected="Gradle.CrossChat [shadowJar]">
     <configuration name="CrossChat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.tobiassteely.crosschat.CrossChat" />
       <module name="CrossChat.main" />
