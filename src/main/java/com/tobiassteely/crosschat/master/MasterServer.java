@@ -17,12 +17,12 @@ public class MasterServer {
 
         if(CrossChatBungee.getPlugin() == null) {
             this.commandWorker = new CommandWorker();
+            this.commandWorker.start();
         }
 
         CrossChat.getInstance().getMongoManager().getRequestManager().registerHandler(new PreMessageEventHandler());
         //CrossChat.getInstance().getMongo().clear();
 
-        this.commandWorker.start();
         this.messageWorker.start();
     }
 
