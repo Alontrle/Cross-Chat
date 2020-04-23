@@ -39,6 +39,7 @@ public class CrossChat {
         this.commandManager = new CommandManager();
         this.mongo = new Mongo();
         this.mongoManager = new MongoManager();
+        this.mongo.clear();
         this.mongoManager.start();
         if(isMaster) {
             Log.sendMessage(0, "Loading Master server");

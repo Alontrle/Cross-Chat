@@ -32,7 +32,7 @@ public class RequestWorker extends Worker {
         while(removeQueue.size() > 0) {
             String id = removeQueue.remove(0);
 
-            this.requests.deleteOne(new Document("id", id));
+            this.requests.findOneAndDelete(new Document("id", id));
             new Thread(() -> {
                 try {
                     Thread.sleep(5000);
@@ -40,7 +40,6 @@ public class RequestWorker extends Worker {
                 }
 
                 CrossChat.getInstance().getMongoManager().getRequestManager().removeRecentID(id);
-                CrossChat.getInstance().getMasterServer().getMessageManager().remove(id);
             }).start();
         }
         while(replaceQueue.size() > 0) {
@@ -56,7 +55,6 @@ public class RequestWorker extends Worker {
 
                 String id = oldDocument.getString("id");
                 CrossChat.getInstance().getMongoManager().getRequestManager().removeRecentID(id);
-                CrossChat.getInstance().getMasterServer().getMessageManager().remove(id);
             }).start();
         }
         if(addQueue.size() > 0) {

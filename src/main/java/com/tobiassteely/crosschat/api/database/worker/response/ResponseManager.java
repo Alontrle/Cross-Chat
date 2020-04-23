@@ -30,7 +30,6 @@ public class ResponseManager extends Worker {
         for (Document doc : responses.find(new Document("destination", CrossChat.getInstance().getId()).append("loaded", false))) {
             new Thread(() -> {
                 if(!recentIDs.contains(doc.getString("id"))) {
-                    recentIDs.add(doc.getString("id"));
                     for (ResponseEventHandler eventHandler : events) {
                         eventHandler.ResponseEventHandler(new MongoDocument(new Document(doc))); // PASSES DOCUMENT
                     }
@@ -40,7 +39,6 @@ public class ResponseManager extends Worker {
         for (Document doc : responses.find(new Document("destination", "Public").append("loaded", false))) {
             new Thread(() -> {
                 if(!recentIDs.contains(doc.getString("id"))) {
-                    recentIDs.add(doc.getString("id"));
                     for (ResponseEventHandler eventHandler : events) {
                         eventHandler.ResponseEventHandler(new MongoDocument(new Document(doc))); // PASSES DOCUMENT
                     }
@@ -60,5 +58,18 @@ public class ResponseManager extends Worker {
 
     public void removeRecentID(String id) {
         this.recentIDs.remove(id);
+    }
+
+
+    public void addRecentID(String id) {
+        this.recentIDs.add(id);
+    }
+
+    public boolean isRecent(String id) {
+        return recentIDs.contains(id);
+    }
+
+    public List<String> getRecentIDs() {
+        return recentIDs;
     }
 }

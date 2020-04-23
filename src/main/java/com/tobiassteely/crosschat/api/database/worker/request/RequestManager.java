@@ -61,4 +61,8 @@ public class RequestManager extends Worker {
     public void addRecentID(String id) {
         this.recentIDs.add(id);
     }
+
+    public boolean isRecent(String id) {
+        return recentIDs.contains(id);
+    }
 }

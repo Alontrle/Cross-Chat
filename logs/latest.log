@@ -1,10 +1,8 @@
-[12:41:44] [main/INFO]: [org.mongodb.driver.cluster] Cluster created with settings {hosts=[144.217.98.22:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
-[12:41:44] [main/INFO]: [org.mongodb.driver.cluster] Cluster description not yet available. Waiting for 30000 ms before timing out
-[12:41:44] [Thread-2/INFO]: [org.mongodb.driver.cluster] Cluster description not yet available. Waiting for 30000 ms before timing out
-[12:41:44] [Thread-3/INFO]: [org.mongodb.driver.cluster] Cluster description not yet available. Waiting for 30000 ms before timing out
-[12:41:44] [cluster-ClusterId{value='5ea073c86a4757295858cb32', description='null'}-144.217.98.22:27017/INFO]: [org.mongodb.driver.connection] Opened connection [connectionId{localValue:1, serverValue:946}] to 144.217.98.22:27017
-[12:41:44] [cluster-ClusterId{value='5ea073c86a4757295858cb32', description='null'}-144.217.98.22:27017/INFO]: [org.mongodb.driver.cluster] Monitor thread successfully connected to server with description ServerDescription{address=144.217.98.22:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=58755900}
-[12:41:45] [Thread-3/INFO]: [org.mongodb.driver.connection] Opened connection [connectionId{localValue:2, serverValue:948}] to 144.217.98.22:27017
-[12:41:45] [main/INFO]: [org.mongodb.driver.connection] Opened connection [connectionId{localValue:3, serverValue:949}] to 144.217.98.22:27017
-[12:41:45] [Thread-2/INFO]: [org.mongodb.driver.connection] Opened connection [connectionId{localValue:4, serverValue:947}] to 144.217.98.22:27017
-[12:41:45] [Thread-1/INFO]: [org.mongodb.driver.connection] Opened connection [connectionId{localValue:5, serverValue:950}] to 144.217.98.22:27017
+[20:16:36] [main/INFO]: [org.mongodb.driver.cluster] Cluster created with settings {hosts=[144.217.98.22:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+[20:16:36] [main/INFO]: [org.mongodb.driver.cluster] Cluster description not yet available. Waiting for 30000 ms before timing out
+[20:16:37] [cluster-ClusterId{value='5ea0de6489a69a7aa4e681c0', description='null'}-144.217.98.22:27017/INFO]: [org.mongodb.driver.connection] Opened connection [connectionId{localValue:1, serverValue:1195}] to 144.217.98.22:27017
+[20:16:37] [cluster-ClusterId{value='5ea0de6489a69a7aa4e681c0', description='null'}-144.217.98.22:27017/INFO]: [org.mongodb.driver.cluster] Monitor thread successfully connected to server with description ServerDescription{address=144.217.98.22:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=58481000}
+[20:16:37] [main/INFO]: [org.mongodb.driver.connection] Opened connection [connectionId{localValue:2, serverValue:1196}] to 144.217.98.22:27017
+[20:16:37] [main/INFO]: [org.mongodb.driver.connection] Opened connection [connectionId{localValue:4, serverValue:1197}] to 144.217.98.22:27017
+[20:16:37] [Thread-3/INFO]: [org.mongodb.driver.connection] Opened connection [connectionId{localValue:3, serverValue:1198}] to 144.217.98.22:27017
+[20:16:46] [Thread-0/INFO]: [org.mongodb.driver.connection] Opened connection [connectionId{localValue:5, serverValue:1199}] to 144.217.98.22:27017

@@ -20,7 +20,7 @@ public class DeathEvent implements Listener {
             String message = prefix + settings.getString("deathMessage").replace("%player%", event.getEntity().getName());
             PreMessageEvent messageEvent = new PreMessageEvent(CrossChat.getInstance().getId(), PlaceholderAPI.setPlaceholders(event.getEntity(), message));
 
-            CrossChat.getInstance().getSlaveServer().getSlaveMessageManager().registerMessage(messageEvent);
+            CrossChat.getInstance().getSlaveServer().getSlaveMessageManager().registerMessage(messageEvent.getID());
 
             CrossChat.getInstance().getMongoManager().getRequestWorker().addDocument(new MongoDocument(messageEvent.toDocument(), CrossChat.getInstance().getId(), "Master"));
         }

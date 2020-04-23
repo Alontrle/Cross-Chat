@@ -31,7 +31,8 @@ public class ChatEvent implements Listener {
             }
 
             PreMessageEvent messageEvent = new PreMessageEvent(CrossChat.getInstance().getId(), PlaceholderAPI.setPlaceholders(event.getPlayer(), prefix + message));
-            CrossChat.getInstance().getSlaveServer().getSlaveMessageManager().registerMessage(messageEvent);
+
+            CrossChat.getInstance().getSlaveServer().getSlaveMessageManager().registerMessage(messageEvent.getID());
             CrossChat.getInstance().getMongoManager().getRequestWorker().addDocument(new MongoDocument(messageEvent.toDocument(), CrossChat.getInstance().getId(), "Master"));
         }
     }

@@ -31,8 +31,7 @@ public class ResponseWorker extends Worker {
     public Boolean runWorker(long start) {
         while(removeStringIDQueue.size() > 0) {
             String id = removeStringIDQueue.remove(0);
-            this.responses.deleteOne(new Document("id", id));
-
+            this.responses.findOneAndDelete(new Document("id", id));
 
             new Thread(() -> {
                 try {
@@ -54,7 +53,7 @@ public class ResponseWorker extends Worker {
                     Thread.sleep(5000);
 
                     String id = oldDocument.getString("id");
-                    CrossChat.getInstance().getMongoManager().getRequestManager().removeRecentID(id);
+                    CrossChat.getInstance().getMongoManager().getResponseManager().removeRecentID(id);
                     CrossChat.getInstance().getMasterServer().getMessageManager().remove(id);
                 } catch (InterruptedException ignored) {
                 }

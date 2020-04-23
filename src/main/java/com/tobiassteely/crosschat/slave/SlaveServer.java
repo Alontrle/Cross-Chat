@@ -15,8 +15,6 @@ public class SlaveServer {
     public SlaveServer() {
         this.slaveMessageManager = new SlaveMessageManager();
         this.slaveMessageWorker = new SlaveMessageWorker();
-        this.slaveMessageWorker.start();
-
 
         CrossChatSpigot.getPlugin().getServer().getPluginManager().registerEvents(new JoinEvent(), CrossChatSpigot.getPlugin());
         CrossChatSpigot.getPlugin().getServer().getPluginManager().registerEvents(new QuitEvent(), CrossChatSpigot.getPlugin());
@@ -24,6 +22,7 @@ public class SlaveServer {
         CrossChatSpigot.getPlugin().getServer().getPluginManager().registerEvents(new ChatEvent(), CrossChatSpigot.getPlugin());
 
         CrossChat.getInstance().getMongoManager().getResponseManager().registerHandler(new MessageEventHandler());
+        this.slaveMessageWorker.start();
     }
 
     public SlaveMessageManager getSlaveMessageManager() {

@@ -17,6 +17,8 @@ public class PreMessageEventHandler extends RequestEventHandler {
             if(document.getDocument().getString("type").equals("PreMessageEvent")) {
                 MessageEvent messageEvent = new MessageEvent("Master", document.getDocument().getString("data"), document.getDocument().getString("id"));
 
+                CrossChat.getInstance().getMasterServer().getMessageManager().add(messageEvent.getID());
+
                 CrossChat.getInstance().getMongoManager().getResponseWorker().addDocument(new MongoDocument(messageEvent.toDocument(), "Master", "Public"));
             }
         }
